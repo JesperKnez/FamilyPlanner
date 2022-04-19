@@ -1,0 +1,41 @@
+/* The root.css file is the root style of all pages and stylesheets. It contains variables in which common used properties are stored, such as colours, fonts, font properties such as weights, sizes etc. This file also contains @font-face rules. And default styles that apply to every page are written here aswell. */
+
+/* VARIABLES  */
+:root{
+    /* COLOURS  */
+    --offwhite: #f3ecd5;
+    --apple: #d6e681;
+    --mint: #AEF3E7;
+    --strawberry: #ff3152;
+    --black-navy: #0D0C1D;
+    --trans-navy: hsl(244, 42%, 36%, 0.11);
+    /* text font sizes  */
+    --textXL: min(1.5rem,1.5vw);
+    --textL: min(1rem,1vw);
+    --textM: min(0.85rem,0.85vw);
+    --textS: min(0.65rem,0.65vw);
+    --textXS: min(0.5rem,0.5vw);;       
+    /* navbar font sizes  */
+    --navXL: min(1.5rem, 1.5vw);;
+    --navL: min(1.2rem, 1.2vw);
+    --navM: min(1rem, 1vw);;
+    --navS: min(0.85rem,0.85vw);
+    --navXS: min(0.65rem,0.65vw);
+    /* header font sizes  */
+    --headXL: min(5.5rem,5.5vw);
+    --headL: min(4.5rem,4.5vw);
+    --headM: min(3.5rem,3.5vw);
+    --headS: min(2.5rem,2.5vw);
+    --headXS: min(1.5rem,1.5vw);
+    /* font  */
+    --Outfit: 'Outfit', sans-serif;
+}
+body{
+    margin: 0;
+    background-color: var(--black-navy);
+}
+h1{
+    font-family: var(--Outfit);
+    color: var(--offwhite);
+    font-size: var(--headXS);
+}
