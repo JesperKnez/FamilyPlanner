@@ -1,26 +1,184 @@
 .wrapper{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 7.5vh 80vh 12.5vh;
+    grid-template-rows: 7.5vh 2.5vh 80vh 10vh;
     grid-template-areas: 
     
     "nav nav nav nav nav"
+    ". . . . ."
     ". main main main ."
-    "foot foot foot foot foot"
     ;
 }
 .navbar{
     grid-area: nav;
     background-color: var(--trans-navy);
+    display: grid;
+    place-items: center;
 }
 .main{
     grid-area: main;
-}
-.footer{
-    grid-area: foot;
-    background-color: var(--trans-navy);
-}
-.navbar, .main, .footer{
+    z-index: 999;
     display: grid;
-    place-content: center;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". form ."
+    ;
+}
+.formwrapper{
+    grid-area: form;
+    display: grid;
+    grid-template-columns: 0.35fr 2fr 0.35fr;
+    grid-template-rows: 0.35fr auto auto auto 3fr 1.5fr 0.15fr;
+    grid-template-areas: 
+    
+    ". . ."
+    ". page ."
+    ". title ."
+    ". subtitle ."
+    ". input ."
+    ". . ."
+    ". . ."
+    
+    ;
+    place-items: center;
+    border-radius: 0.85vw;
+}
+.pages, .title, .subtitle, .input, .button{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.pages{
+    grid-area: page;
+}
+.currentstep{
+    font-size: var(--navM);
+    font-family: var(--Light);
+}
+.title{
+    grid-area: title;
+    font-family: var(--Medium);
+}
+.formtitle{
+    font-size: var(--headS);
+    background: linear-gradient(65deg, var(--offwhite), var(--apple));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.subtitle{
+    grid-area: subtitle;
+    position: relative;
+}
+.subtitle::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 50%;
+    background: linear-gradient(65deg, var(--offwhite), var(--apple), var(--offwhite));
+    bottom: 0;
+}
+.sub{
+    font-size: var(--navM);
+    font-family: var(--Light);
+    color: var(--mint);
+}
+.input{
+    grid-area: input;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 85%;
+}
+.inputwrap{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    gap: 1.5vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    
+    "fname lname"
+    "mail mail"
+    "confirmmail confirmmail"
+    ;
+}
+input{
+    width: 100%;
+    height: 35%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: var(--Regular);
+    font-size: var(--navL);
+    color: var(--mint);
+}
+input::placeholder{
+    color: var(--mint);
+    opacity: 0.65;
+}
+.inputblock{
+    position: relative;
+}
+.inputblock::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 50vw;
+    background: linear-gradient(65deg, var(--offwhite), var(--apple));
+    left: 0;
+    bottom: 0;
+}
+.inputTitle{
+    font-family: var(--Light);
+    color: var(--apple);
+}
+.firstname{
+    grid-area: fname;
+}
+.lastname{
+    grid-area: lname;
+}
+.email{
+    grid-area: mail;
+}
+.confirmmail{
+    grid-area: confirmmail;
+}
+.submit{
+    cursor: pointer;
+    aspect-ratio: 15 / 3;
+    width: 15vw;
+    border-radius: 1.5em;
+    border: none;
+    outline: none;
+    background: linear-gradient(65deg, var(--offwhite), var(--apple));
+    font-family: var(--SemiBold);
+    font-size: 0.85vw;
+    color: var(--black-navy);
+}
+.submitblock{
+    height: 1.5fr;
+}
+.button{
+    grid-area: button;
+}
+button{
+    cursor: pointer;
+    aspect-ratio: 15 / 3;
+    width: 15vw;
+    border-radius: 1.5em;
+    border: none;
+    outline: none;
+    background: linear-gradient(65deg, var(--offwhite), var(--apple));
+    font-family: var(--SemiBold);
+    font-size: 0.85vw;
+    color: var(--black-navy);
 }

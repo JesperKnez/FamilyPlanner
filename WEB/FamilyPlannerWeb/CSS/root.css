@@ -28,14 +28,17 @@
     --headS: min(2.5rem,2.5vw);
     --headXS: min(1.5rem,1.5vw);
     /* font  */
-    --Outfit: 'Outfit', sans-serif;
+    --ExtraLight: 'Outfit ExtraLight';
+    --Light: 'Outfit Light';
+    --Regular: 'Outfit';
+    --Medium: "Outfit Medium";
+    --SemiBold: 'Outfit SemiBold';
 }
 body{
     margin: 0;
     background-color: var(--black-navy);
 }
 h1{
-    font-family: var(--Outfit);
     color: var(--offwhite);
     font-size: var(--headXS);
 }
