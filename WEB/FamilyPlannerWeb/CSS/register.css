@@ -135,6 +135,7 @@ input::placeholder{
     background: linear-gradient(65deg, var(--offwhite), var(--apple));
     left: 0;
     bottom: 0;
+    transition: width 150ms ease-in-o;
 }
 .inputTitle{
     font-family: var(--Light);
@@ -149,7 +150,7 @@ input::placeholder{
 .email{
     grid-area: mail;
 }
-.confirmmail{
+.password{
     grid-area: confirmmail;
 }
 .submit{

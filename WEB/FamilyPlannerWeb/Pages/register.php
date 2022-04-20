@@ -17,22 +17,19 @@
 <body>
     <div class="wrapper">
         <div class="navbar">
-            <h1>FamPlan</h1>
+            <h1>NAVBAR</h1>
         </div>
         <div class="main">
             <div class="formwrapper">
-                <div class="pages">
-                    <h1 class="currentstep">Stap 1 van de 3</h1>
-                </div>
                 <div class="title">
                     <h1 class="formtitle">Je account aanmaken</h1>
                 </div>
                 <div class="subtitle">
-                    <h1 class="sub">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <h1 class="sub">Nog één stap te gaan voordat je toegang hebt tot FamilyPlanner!</h1>
                 </div>
                 <div class="input">
-                    <form method="post" action="formhandler.php" autocomplete="off" class="container">
-                        <div class="inputwrap step1" data-currentPage="true" data-visible="true" data-used="true">
+                    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" autocomplete="off" class="container">
+                        <div class="inputwrap step1">
                             <div class="firstname inputblock">
                                 <h3 class="inputTitle">Voornaam</h3>
                                 <input type="text" name="fname" id="" class="field" placeholder="Jan">
@@ -46,13 +43,13 @@
                                 <h3 class="inputTitle">Emailladres</h3>
                                 <input type="text" name="fname" id="" class="field" placeholder="janjanssens@email.nl">
                             </div>
-                            <div class="confirmmail inputblock">
+                            <div class="password inputblock">
                                 <h3 class="inputTitle">Wachtwoord</h3>
                                 <input type="password" name="fname" id="" class="field">
                             </div>
                         </div>
                         <div class="button">
-                            <button type="button" class="clicker" data-submit="false">Account aanmaken</button>
+                            <button type="submit">Account aanmaken</button>
                         </div>
                     </form>
                 </div>
