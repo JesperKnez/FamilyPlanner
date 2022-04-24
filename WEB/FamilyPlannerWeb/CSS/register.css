@@ -168,10 +168,8 @@ input::placeholder{
 .submitblock{
     height: 1.5fr;
 }
-.button{
+input[type="submit"]{
     grid-area: button;
-}
-button{
     cursor: pointer;
     aspect-ratio: 15 / 3;
     width: 15vw;

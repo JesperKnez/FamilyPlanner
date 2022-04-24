@@ -28,7 +28,8 @@
                     <h1 class="sub">Nog één stap te gaan voordat je toegang hebt tot FamilyPlanner!</h1>
                 </div>
                 <div class="input">
-                    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" autocomplete="off" class="container">
+                   <!-- <form method="post" action="<?php /* echo $_SERVER['PHP_SELF']; */?>" autocomplete="off" class="container"> -->
+                    <form method="post" action="../PHP/registerinput.php" class="container">
                         <div class="inputwrap step1">
                             <div class="firstname inputblock">
                                 <h3 class="inputTitle">Voornaam</h3>
@@ -37,19 +38,19 @@
                             </div>
                             <div class="lastname inputblock">
                                 <h3 class="inputTitle">Achternaam</h3>
-                                <input type="text" name="fname" id="" class="field" placeholder="Janssens">
+                                <input type="text" name="sname" id="" class="field" placeholder="Janssens">
                             </div>
                             <div class="email inputblock">
                                 <h3 class="inputTitle">Emailladres</h3>
-                                <input type="text" name="fname" id="" class="field" placeholder="janjanssens@email.nl">
+                                <input type="text" name="email" id="" class="field" placeholder="janjanssens@email.nl">
                             </div>
                             <div class="password inputblock">
                                 <h3 class="inputTitle">Wachtwoord</h3>
-                                <input type="password" name="fname" id="" class="field">
+                                <input type="password" name="pwd" id="" class="field">
                             </div>
                         </div>
                         <div class="button">
-                            <button type="submit">Account aanmaken</button>
+                            <input type="submit" value="Account aanmaken" class=".button" name="submit">
                         </div>
                     </form>
                 </div>
