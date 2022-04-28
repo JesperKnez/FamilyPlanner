@@ -1,3 +1,16 @@
+<?php /*
+session_commit();
+include_once "../PHP/errors.php";
+// throw an error
+if($_SESSION['fErr'] == 0);
+{
+    echo "helloworld";
+}
+if($_SESSION['fErr'] == 1 && isset($_SESSION['submit'])){
+    echo (ErrorMessage::$fnameErr . "<br>");
+} */
+// fix morgen
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
